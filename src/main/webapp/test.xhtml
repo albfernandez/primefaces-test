@@ -7,10 +7,13 @@
 
     <h:head>
         <title>PrimeFaces Test</title>
+        <h:outputScript name="es6-shim.js"></h:outputScript>
     </h:head>
     <h:body>
 
-        <h1>#{testView.testString}</h1>
+        <h:form>
+        	<p:inputNumber value="#{testInputNumber.example}" />
+        </h:form>
 
     </h:body>
 </html>
