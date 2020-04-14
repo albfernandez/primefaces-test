@@ -11,6 +11,11 @@
     <h:body>
 
         <h1>#{testView.testString}</h1>
+        
+        <h:form>
+        	<p:inputNumber value="#{testInputNumber.number}" minValue="1" maxValue="999" symbol=" EUR" symbolPosition="s"></p:inputNumber>
+        	<p:commandButton value="validate" ajax="false"></p:commandButton>
+        </h:form>
 
     </h:body>
 </html>
